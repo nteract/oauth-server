@@ -1,11 +1,11 @@
-
+/* Server code comes from https://www.npmjs.com/package/github-oauth */
 const githubOAuth = require('github-oauth')({
-  githubClient: process.env['GITHUB_CLIENT'],
-  githubSecret: process.env['GITHUB_SECRET'],
+  githubClient: '07068c1e33e98653e7e1', // don't fret, this is a public key
+  githubSecret: process.env['GITHUB_SECRET'], // don't share this!
   baseURL: 'https://oauth.nteract.io/',
   loginURI: '/github',
   callbackURI: '/callback',
-  scope: 'gist' // optional, default scope is set to user
+  scope: 'gist' // perhaps we should include user email too
 })
 
 require('http').createServer(function(req, res) {
