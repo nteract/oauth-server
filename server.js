@@ -1,6 +1,6 @@
 /* Server code comes from https://www.npmjs.com/package/github-oauth */
 const githubOAuth = require('github-oauth')({
-  githubClient: '07068c1e33e98653e7e1', // don't fret, this is a public key
+  githubClient: process.env['GITHUB_CLIENT_ID'], // don't fret, this is a public key
   githubSecret: process.env['GITHUB_SECRET'], // don't share this!
   baseURL: 'https://oauth.nteract.io',
   loginURI: '/github',
