@@ -1,0 +1,16 @@
+{
+  "name": "nteract-github-oauth",
+  "version": "0.0.1",
+  "dependencies": {
+     "github-oauth": "^0.2.2",
+     "request": "^2.75.0"
+  },
+  "description": "Handle Github OAuth for nteract",
+  "main": "index.js",
+  "scripts": {
+        "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
