@@ -18,3 +18,7 @@ require('http').createServer(function(req, res) {
 githubOAuth.on('token', function(token, serverResponse) {
   serverResponse.end(JSON.stringify(token))
 })
+
+githubOAuth.on('error', function(err) {
+  console.error('there was a login error', err)
+})
