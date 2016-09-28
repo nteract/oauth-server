@@ -2,7 +2,7 @@
 const githubOAuth = require('github-oauth')({
   githubClient: process.env['GITHUB_CLIENT'],
   githubSecret: process.env['GITHUB_SECRET'],
-  baseURL: process.env['BASE_URL'] || 'https://nteract-oauth.now.sh',
+  baseURL: process.env['BASE_URL'] || 'https://oauth.nteract.io',
   loginURI: '/github',
   callbackURI: '/callback',
   scope: 'gist' // perhaps we should include user email too
