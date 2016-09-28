@@ -2,7 +2,7 @@
 
 Just a quick little server relying on [Max Ogden + Pals github-oauth package](https://www.npmjs.com/package/github-oauth).
 
-Used for providing Publish-to-gist in github.com/nteract/nteract.
+Use **OAuth Server** for providing [Publish-to-gist](https://github.com/nteract/nteract/blob/master/src/notebook/epics/github-publish.js) functionality in **nteract** [[repo](https://github.com/nteract/nteract)].
 
 ## Deploying
 
