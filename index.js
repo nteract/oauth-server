@@ -15,11 +15,6 @@ require('http').createServer(function(req, res) {
   res.end(); // Close all other connection paths.
 }).listen(80)
 
-githubOAuth.on('error', function(err) {
-  console.error('there was a login error', err)
-})
-
 githubOAuth.on('token', function(token, serverResponse) {
-  console.log('here is your shiny new github oauth token', token)
   serverResponse.end(JSON.stringify(token))
 })
