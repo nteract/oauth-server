@@ -1,5 +1,7 @@
 # OAuth Server
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/nteract/oauth-server.svg)](https://greenkeeper.io/)
+
 Just a quick little server relying on [Max Ogden + Pals github-oauth package](https://www.npmjs.com/package/github-oauth).
 
 Use **OAuth Server** for providing [Publish-to-gist](https://github.com/nteract/nteract/blob/master/src/notebook/epics/github-publish.js) functionality in **nteract** [[repo](https://github.com/nteract/nteract)].
