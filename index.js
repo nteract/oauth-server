@@ -1,4 +1,8 @@
 /* Server code comes from https://www.npmjs.com/package/github-oauth */
+if(!process.env['GITHUB_CLIENT'] || !process.env['GITHUB_SECRET']) {
+  throw new Error("Required github credentials are not set, fix up the deployment for https://github.com/nteract/oauth-server");
+}
+
 const githubOAuth = require('github-oauth')({
   githubClient: process.env['GITHUB_CLIENT'],
   githubSecret: process.env['GITHUB_SECRET'],
