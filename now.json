@@ -1,3 +1,15 @@
 {
-  "version": 2
+  "name": "oauth-server",
+  "version": 2,
+  "alias": "oauth.nteract.io",
+  "builds": [
+    {
+      "src": "index.js",
+      "use": "@now/node-server"
+    }
+  ],
+  "env": {
+    "GITHUB_SECRET": "@github_client_secret",
+    "GITHUB_CLIENT": "@github_client_id"
+  }
 }
