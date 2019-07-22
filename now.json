@@ -11,5 +11,15 @@
   "env": {
     "GITHUB_SECRET": "@github_client_secret",
     "GITHUB_CLIENT": "@github_client_id"
-  }
+  },
+  "routes": [
+    {
+      "src": "/github",
+      "dest": "index.js"
+    },
+    {
+      "src": "/callback",
+      "dest": "index.js"
+    }
+  ]
 }
